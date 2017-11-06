@@ -278,7 +278,7 @@ var P = (function() {
     IO.init(request);
 
     request.defer = true;
-    var url = IO.PROJECT_URL + id + '/get/';
+    var url = '/local.sb2';
     request.add(IO.load(url).onLoad(function(contents) {
       try {
         var json = IO.parseJSONish(contents);
